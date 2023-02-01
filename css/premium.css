@@ -150,7 +150,6 @@ a:hover {
     user-select: none;
 }
 
-
 .premium .information {
     display: grid;
     grid-template-columns: repeat(2, 0.9fr);
@@ -197,7 +196,7 @@ a:hover {
 }
 
 .info p{
-    width: 450px
+    width: 70%
 }
 
 span {
