@@ -187,24 +187,28 @@ a:hover {
 
 .features .information {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 0.9fr);
+    gap: 3rem;
 }
 
 @media (max-width: 900px) {
     .features .information {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 0.9fr);
     }
 }
 
 .features .info {
+    flex-direction: column;
     border-radius: 10px;
     background-color: #16151f;
     color: white;
     text-align: center;
-    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem;
     display: grid;
-    gap: 5px;
+    gap: 1rem;
     place-items: center;
 }
 
