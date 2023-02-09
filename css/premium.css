@@ -84,7 +84,7 @@ a {
     }
 }
 
-a:hover {
+.li:hover {
     color: lightseagreen;
     transition: .7s;
 }
