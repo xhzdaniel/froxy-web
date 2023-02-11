@@ -350,6 +350,11 @@ span {
     color: lightseagreen
 }
 
+span:hover{
+    color: #027570;
+    transition: .7s;
+}
+
 .li:hover {
     color: lightseagreen;
     transition: .7s;
@@ -381,14 +386,14 @@ span {
 }
 
 .server p {
+    padding: 10px;
+}
+
+.server a {
     color: rgba(255, 255, 255, 0.75);
     font-size: 20px;
     margin: 10px;
     width: 100%;
-}
-
-.server a {
-    padding: 10px;
 }
 
 .server img {
@@ -459,6 +464,7 @@ span {
 
 .sparked a:hover {
     color: goldenrod;
+    transition: .7s;
 }
 
 .sparked img {
