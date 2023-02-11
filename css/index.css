@@ -376,7 +376,6 @@ span:hover{
 
 .server {
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 10px;
     background-color: #16151f;
@@ -386,19 +385,26 @@ span:hover{
 }
 
 .server p {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 14px;
     padding: 10px;
 }
 
 .server a {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     color: rgba(255, 255, 255, 0.75);
-    font-size: 20px;
-    margin: 10px;
+    font-size: 18px;
     width: 100%;
 }
 
 .server img {
     border-radius: 15%;
-    height: 80px;
+    height: 60px;
+    margin: 5px;
 }
 
 @media (max-width: 990px) {
