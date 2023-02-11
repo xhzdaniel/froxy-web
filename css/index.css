@@ -276,7 +276,7 @@ a {
     gap: 3rem;
 }
 
-@media (max-width: 990) {
+@media (max-width: 590px) {
     .features .information {
         grid-template-columns: repeat(1, 0.9fr);
     }
