@@ -328,12 +328,10 @@ span:hover{
     transition: .7s;
 }
 
-.title2 {
-    color: white;
-    font-size: 30px;
-    margin: 100px;
+.features h2{
+    font-size: 1.8rem;
+    margin: 8%;
 }
-
 .servers1 {
     display: grid;
     place-content: center;
@@ -341,7 +339,11 @@ span:hover{
     grid-template-columns: repeat(3, 0.09fr);
     gap: 2rem;
 }
+.totalservers h2{
+    font-size: 1.8rem;
+    margin: 8%;
 
+}
 .server {
     display: flex;
     align-items: center;
