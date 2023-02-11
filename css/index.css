@@ -27,21 +27,14 @@ body {
 header {
     display: flex;
     background-color: #1D1E21;
-    border-radius: 8px;
+    border-radius: 6px;
     width: 90%;
-    padding: 10px;
+    padding: 15px;
     margin-top: 10px;
     margin-left: 5%;
     margin-bottom: 0;
     align-items: center;
     min-width: 250px;
-}
-
-header img {
-    width: 60px;
-    min-width: 60px;
-    border-radius: 100%;
-    user-select: none;
 }
 
 header h1 {
@@ -58,6 +51,154 @@ header nav {
     margin-left: auto;
 }
 
+.text-and-logo {
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.text-and-logo a {
+    margin-left: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text-and-logo img {
+    width: 3rem;
+    border-radius: 100%;
+    user-select: none;
+}
+
+#bio {
+    background-color: #1D1E21;
+    border-radius: 6px;
+    padding: 0 10px;
+    position: absolute;
+    top: 14%;
+    margin-left: -17px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    animation-name: logo-slogan-sink, logo-slogan;
+    animation-duration: .3s, 1.5s;
+    animation-delay: 0s, .3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal, alternate;
+    user-select: none;
+}
+
+@-webkit-keyframes logo-slogan {
+    0% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+
+    50% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+
+    100% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@keyframes logo-slogan {
+    0% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+
+    50% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+
+    100% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@-webkit-keyframes logo-slogan-sink {
+    100% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+
+@keyframes logo-slogan-sink {
+    100% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px)
+    }
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #bio{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #check {
+        display: none;
+    }
+    ul {
+        background-color: #1D1E21;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        position: fixed;
+        width: 90%;
+        margin-left: 5%;
+        height: 45%;
+        top: 16%;
+        left: -100%;
+        text-align: center;
+        transition: all, .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
 ul li {
     display: inline-block;
     padding: 0 20px;
@@ -69,19 +210,6 @@ a {
     color: white;
     text-decoration: none;
     user-select: none;
-}
-
-@media (max-width: 550px) {
-    header nav {
-        display: none;
-    }
-}
-
-@media (max-width: 550px) {
-    header {
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 .nav-title {
@@ -173,6 +301,8 @@ a {
 }
 
 .features .information {
+    place-items: center;
+    place-content: center;
     display: grid;
     grid-template-columns: repeat(2, 0.9fr);
     gap: 3rem;
