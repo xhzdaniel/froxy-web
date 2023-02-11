@@ -189,14 +189,13 @@ a {
     border-radius: 10px;
     background-color: #16151f;
     color: white;
-    text-align: center;
-    align-items: center;
+    place-content: center;
+    place-items: center;
     justify-content: center;
     height: 100%;
     padding: 2rem;
     display: grid;
     gap: 1rem;
-    place-items: center;
 }
 
 .features .img {
@@ -232,25 +231,12 @@ span {
     margin: 100px;
 }
 
-.totalservers {
-    margin-left: 100px;
-}
-
-.servers2 {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    padding: 30px;
-    margin-left: 350px;
-}
-
 .servers1 {
     display: grid;
-    align-items: start;
-    justify-content: center;
+    place-content: center;
+    place-items: center;
     grid-template-columns: repeat(3, 0.09fr);
-    gap: 1rem;
-    margin-right: 280px;
+    gap: 2rem;
 }
 
 .server {
@@ -280,19 +266,11 @@ span {
     height: 80px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 990px) {
     .servers1 {
         align-items: center;
         justify-content: center;
-        margin-right: 100px;
         grid-template-columns: repeat(1, 0.09fr);
-        gap: 1rem;
-    }
-
-    .servers2 {
-        align-items: center;
-        justify-content: center;
-        margin-left: 0px;
         gap: 1rem;
     }
 }
