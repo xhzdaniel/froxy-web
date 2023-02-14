@@ -261,6 +261,11 @@ a {
     color: white;
     background-color: lightseagreen;
     transition: all 0.3s ease-in-out;
+    -webkit-transform: translate(3em, 0);
+    -moz-transform: translate(3em, 0);
+    -o-transform: translate(3em, 0);
+    -ms-transform: translate(3em, 0);
+    transform: translateY(-5px)
 }
 
 @media (max-width: 590px){
@@ -304,8 +309,9 @@ a {
 
 .features h2 {
     color: white;
-    font-size: 30px;
-    margin-top: 150px;
+    font-size: 1.8rem;
+    margin-top: 9%;
+    margin-bottom: 10px;
 }
 
 .features .title4 {
@@ -328,10 +334,6 @@ span:hover{
     transition: .7s;
 }
 
-.features h2{
-    font-size: 1.8rem;
-    margin: 8%;
-}
 .servers1 {
     display: grid;
     place-content: center;
@@ -352,6 +354,18 @@ span:hover{
     margin: 5px;
     padding: 15px 20px;
     width: 300px;
+    transition: all;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.server:hover{
+    -webkit-transform: translate(3em, 0);
+    -moz-transform: translate(3em, 0);
+    -o-transform: translate(3em, 0);
+    -ms-transform: translate(3em, 0);
+    transform: scale(1.1);
 }
 
 .server p {
