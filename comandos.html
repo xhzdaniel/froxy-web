@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Froxy - Comandos</title>
+    <link rel="stylesheet" href="./css/comandos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <script src="https://kit.fontawesome.com/d2613f7fbe.js" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js"></script>
+</head>
+
+<header>
+    <div class="text-and-logo">
+        <img src="/assets/logo.png" alt="logo">
+        <a href="/" class="text-logo">Froxy</a>
+    </div>
+    <div id="bio">
+        Un bot de utilidad
+    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="active">
+            <li><a href="/" class="li">Inicio</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=1003896461420937346&permissions=536870382718&scope=bot%20applications.commands"
+                    target="_blank" class="li">Invitar</a></li>
+            <li><a href="https://discord.gg/x5jdFCrbGa" target="_blank" class="li">Soporte</a></li>
+            <li><a href="/premium.html" class="li">Premium</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <h1>Comandos</h1>
+
+        <div class="categorias">
+            <input type="button" id="todos" checked onclick="javascript:activar_desactivar('todos')">
+        <label for="todos" class="buttons" id="btntodos">
+            <span class="button__text">Todos</span>
+            <i class="button__icon fas fa-globe"></i>
+        </label>
+        <input type="button" id="music" checked onclick="javascript:activar_desactivar('music')">
+        <label for="music" class="buttons" id="btnmusic">
+            <span class="button__text">Música</span>
+            <i class="button__icon fas fa-music"></i>
+        </label>
+        <input type="button" id="config" checked onclick="javascript:activar_desactivar('config')">
+        <label for="config" class="buttons" id="btnconfig">
+            <span class="button__text">Sistemas</span><i class="button__icon fas fa-gear"></i>
+        </label>
+        <input type="button" id="otros" checked onclick="javascript:activar_desactivar('otros')">
+        <label for="otros" class="buttons" id="btnotros">
+            <span class="button__text">Otros</span><i class="button__icon fas fa-ellipsis"></i>
+        </label>
+    </div>
+    
+        <div id="div-todos" class="todos">
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/filtro</span>
+                    <i class="fa-sharp fa-solid fa-crown"></i>
+                </div>
+                <p>Activa o desactiva un filtro a la canción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/config</span>
+                    <i class="fa-sharp fa-solid fa-crown"></i>
+                </div>
+                <p>Configura extras del bot como; <span>Moderadores, roles y canales extras.</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/adivina</span>
+                    <i class="fa-sharp fa-solid fa-crown"></i>
+                </div>
+                <p>Crea un evento <span>Adivina el número</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/play</span>
+                </div>
+                <p>Reproduce una canción en un canal de voz</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/pause</span>
+                </div>
+                <p>Activa el modo pausado a la canción en reproducción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/resume</span>
+                </div>
+                <p>Quita el modo pausado de la canción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/playlist</span>
+                </div>
+                <p>Mira la lista de canciones en espera</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/skip</span>
+                </div>
+                <p>Salta la canción en reproducción a la siguiente</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/stop</span>
+                </div>
+                <p>Detiene la canción o lista de reproducción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/bucle</span>
+                </div>
+                <p>Añade el modo bucle para que se repita la canción en reproducción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/sugerencia</span>
+                </div>
+                <p>Cambia el estado de una sugerencia <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/calificar</span>
+                </div>
+                <p>Envía una calificación a un usuario <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/confesar</span>
+                </div>
+                <p>Envía una confesión en el servidor <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/reseña</span>
+                </div>
+                <p>Envía una reseña del servidor <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/sugerir</span>
+                </div>
+                <p>Envía una sugerencia en el servidor <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/voicesay</span>
+                </div>
+                <p>Repite el texto en un canal de voz <span>[Debes estar en un canal de voz]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/sugerencias</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>sugerencias</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/antilinks</span>
+                </div>
+                <p>Activa, configura o desactiva el sistema <span>antilinks</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/bienvenidas</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>bienvenidas</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/calificaciones</span>
+                </div>
+                <p>Activa o desactiva el sistema de <span>calificaciones</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/confesiones</span>
+                </div>
+                <p>Activa, configura y desactiva el sistema de <span>confesiones</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/logs</span>
+                </div>
+                <p>Activa, configura y desactiva el sistema de <span>registros de auditoría</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/reseñas</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>reseñas</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/verificacion</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>verificacion</span></p>
+            </div>
+        </div>
+
+        <div id="div-music" class="music">
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/filtro</span>
+                    <i class="fa-sharp fa-solid fa-crown"></i>
+                </div>
+                <p>Activa o desactiva un filtro a la canción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/play</span>
+                </div>
+                <p>Reproduce una canción en un canal de voz</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/pause</span>
+                </div>
+                <p>Activa el modo pausado a la canción en reproducción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/resume</span>
+                </div>
+                <p>Quita el modo pausado de la canción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/playlist</span>
+                </div>
+                <p>Mira la lista de canciones en espera</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/skip</span>
+                </div>
+                <p>Salta la canción en reproducción a la siguiente</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/stop</span>
+                </div>
+                <p>Detiene la canción o lista de reproducción</p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/bucle</span>
+                </div>
+                <p>Añade el modo bucle para que se repita la canción en reproducción</p>
+            </div>
+        </div>
+
+        <div id="div-config" class="configuracion">
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/adivina</span>
+                    <i class="fa-sharp fa-solid fa-crown"></i>
+                </div>
+                <p>Crea un evento <span>Adivina el número</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/sugerencias</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>sugerencias</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/antilinks</span>
+                </div>
+                <p>Activa, configura o desactiva el sistema <span>antilinks</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/bienvenidas</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>bienvenidas</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/calificaciones</span>
+                </div>
+                <p>Activa o desactiva el sistema de <span>calificaciones</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/confesiones</span>
+                </div>
+                <p>Activa, configura y desactiva el sistema de <span>confesiones</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/logs</span>
+                </div>
+                <p>Activa, configura y desactiva el sistema de <span>registros de auditoría</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/reseñas</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>reseñas</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/verificacion</span>
+                </div>
+                <p>Activa, actualiza o desactiva el sistema de <span>verificacion</span></p>
+            </div>
+        </div>
+
+        <div id="div-otros" class="otros">
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/config</span>
+                    <i class="fa-sharp fa-solid fa-crown"></i>
+                </div>
+                <p>Configura extras del bot como; <span>Moderadores, roles y canales extras.</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/sugerencia</span>
+                </div>
+                <p>Cambia el estado de una sugerencia <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/calificar</span>
+                </div>
+                <p>Envía una calificación a un usuario <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/confesar</span>
+                </div>
+                <p>Envía una confesión en el servidor <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/reseña</span>
+                </div>
+                <p>Envía una reseña del servidor <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/sugerir</span>
+                </div>
+                <p>Envía una sugerencia en el servidor <span>[Debe estar activado el sistema]</span></p>
+            </div>
+            <div class="comando">
+                <div class="comando-info">
+                    <span>/voicesay</span>
+                </div>
+                <p>Repite el texto en un canal de voz <span>[Debes estar en un canal de voz]</span></p>
+            </div>
+        </div>
+
+    </main>
+</body>
+<footer class="footer">
+    <a>© Froxy & Daniel - 2023</a>
+</footer>
+
+</html>

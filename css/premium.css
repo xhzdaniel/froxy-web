@@ -168,7 +168,7 @@ a {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
     #bio{
         display: none;
     }
@@ -180,13 +180,14 @@ a {
     }
     ul {
         background-color: #1D1E21;
-        border-radius: 10px;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         position: fixed;
         width: 90%;
         margin-left: 5%;
-        height: 45%;
+        height: 60%;
         top: 16%;
         left: -100%;
         text-align: center;
