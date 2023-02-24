@@ -275,7 +275,7 @@ button{
 }
 
 #todos, #music, #otros, #config{
-    display: none !important
+    display: none;
 }
 
 .button__icon{
