@@ -261,13 +261,12 @@ main{
     display: flex;
     width: 10rem;
     height: 2.5rem;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
     background: #1D1E21;
     font-size: 18px;
     border-radius: 0.50rem;
+    gap: 2rem;
 }
 
 button{
@@ -276,11 +275,11 @@ button{
 }
 
 #todos, #music, #otros, #config{
-    display: none;
+    display: none !important
 }
 
 .button__icon{
-    display: none;
+    display: flex;
 }
 
 .button__text{
