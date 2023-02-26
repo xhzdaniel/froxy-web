@@ -144,18 +144,19 @@ header nav {
 }
 
 @media (max-width: 720px) {
-    #bio {
+    header{
+        top: 0%;
+        position: fixed;
+    }
+    #bio{
         display: none;
     }
-
-    .checkbtn {
+    .checkbtn{
         display: block;
     }
-
     #check {
         display: none;
     }
-
     ul {
         background-color: #1D1E21;
         border-top-right-radius: 0;
@@ -163,11 +164,12 @@ header nav {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         position: fixed;
+        z-index: 0 !important;
         width: 90%;
         margin-left: 5%;
         height: 60%;
         top: 16%;
-        left: -100%;
+        right: -100%;
         text-align: center;
         transition: all, .5s;
     }
@@ -183,7 +185,7 @@ header nav {
     }
 
     #check:checked~ul {
-        left: 0;
+        right: 5%;
     }
 
     ::-webkit-scrollbar {
@@ -236,13 +238,13 @@ body h1 {
 main{
     display: flex;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
     align-items: center;
     gap: 4rem;
     color: #fff;
     margin: 5rem 0px;
+    margin-top: 20%;
+    z-index: 0 !important;
 }
 
 .categorias{
@@ -318,7 +320,6 @@ button{
 .todos {
     display: inline-flex;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
     gap: 2rem;
     max-width: 80%;
     justify-content: center;
@@ -332,7 +333,6 @@ button{
 .configuracion {
     display: none;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
     gap: 2rem;
     max-width: 80%;
     justify-content: center;
@@ -346,7 +346,6 @@ button{
 .otros {
     display: none;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
     gap: 2rem;
     max-width: 80%;
     justify-content: center;
@@ -360,7 +359,6 @@ button{
 .music {
     display: none;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
     gap: 2rem;
     max-width: 80%;
     justify-content: center;
@@ -380,15 +378,12 @@ button{
     padding: 1rem;
     border-radius: 0.45rem;
     background: #1D1E21;
-    backdrop-filter: blur(4px);
     color: #fff;
 }
 
 .comando-info {
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
     align-items: center;
     border-bottom: 1px solid rgb(40, 46, 51);
     padding-bottom: 1rem;
@@ -401,7 +396,7 @@ button{
 }
 
 .comando-info i {
-    color: rgb(234, 179, 8);
+    color: rgb(234, 179, 8);    
 }
 
 .comando p{
