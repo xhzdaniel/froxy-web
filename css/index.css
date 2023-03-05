@@ -308,7 +308,6 @@ a {
     width: 10%;
     min-width: 64px;
     filter: invert();
-    position: fixed;
 }
 
 .features h2 {
