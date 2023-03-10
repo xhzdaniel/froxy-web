@@ -161,20 +161,25 @@ a {
 #check {
     display: none;
 }
+
 @media (max-width: 720px) {
-    header{
+    header {
         top: 0%;
         position: fixed;
     }
-    #bio{
+
+    #bio {
         display: none;
     }
-    .checkbtn{
+
+    .checkbtn {
         display: block;
     }
+
     #check {
         display: none;
     }
+
     ul {
         background-color: #1D1E21;
         border-top-right-radius: 0;
@@ -226,17 +231,18 @@ ul li {
     margin-top: 100px;
 }
 
+.subtitle {
+    text-align: start;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
 .descri {
     font-size: 20px;
     font-weight: 700;
     color: #d4d4d4;
-}
-
-.subtitle {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 30px;
-    font-weight: lighter;
-    margin-bottom: 0px;
 }
 
 .logo {
@@ -256,7 +262,7 @@ span {
     align-items: center;
 }
 
-#modi{
+#modi {
     font-size: 18px;
     margin: 20px
 }
@@ -269,15 +275,16 @@ span {
     width: 80%;
 }
 
-.tos p{
+.texto {
+    color: rgba(255, 255, 255, 0.75);
     text-align: start;
 }
 
- @media(max-width: 720px){
-    .title{
+@media(max-width: 720px) {
+    .title {
         margin-top: 150px;
     }
- }
+}
 
 ::-webkit-scrollbar {
     background-color: #080808;
@@ -290,11 +297,52 @@ span {
     border-radius: 5px;
 }
 
-.footer {
-    position: relative;
-    text-align: center;
+footer {
+    margin-top: 200px;
+    width: 100%;
+    background-color: #1D1E21;
+}
+
+footer .information-footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-footer h3 {
     color: #fff;
-    font-size: 15px;
-    font-weight: lighter;
-    padding: 30px;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .information-footer .box-footer a{
+    display: inline-block;
+    margin-bottom: .5rem;
+    opacity: .5;
+    color: #d4d4d4;
+    text-decoration: none;
+    background-image: linear-gradient(lightseagreen,lightseagreen);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+footer .information-footer .box-footer a:hover{
+    background-size: 100% 2px;
+    opacity: 1
 }
