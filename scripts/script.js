@@ -24,7 +24,7 @@ function activar_desactivar(info) {
                 document.getElementById('btntodos').style.background = "#1D1E21";
                 document.getElementById('btnmusic').style.background = "lightseagreen";
                 document.getElementById('btnconfig').style.background = "#1D1E21";
-                document.getElementById('btnconfig').style.background = "#1D1E21";
+                document.getElementById('btnotros').style.background = "#1D1E21";
             }
         }
             break;
