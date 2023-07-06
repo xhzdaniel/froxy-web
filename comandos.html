@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Froxy - Comandos</title>
-    <link rel="stylesheet" href="./css/comandos.css">
+    <link rel="stylesheet" href="./css/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,71 +13,75 @@
     <script src="/scripts/script.js"></script>
 </head>
 
+
 <header>
-    <div class="text-and-logo">
-        <img src="/assets/logo.png" alt="logo">
-        <a href="/" class="text-logo">Froxy</a>
-    </div>
-    <div id="bio">
-        Un bot de utilidad
-    </div>
+    <img src="/assets/logo.png" alt="logo" id="logo">
+    <a href="/" id="text-logo">Froxy</a>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <div class="circle nav-icon">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </div>
+    </label>
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
         <ul class="active">
-            <li><a href="/" class="li">Inicio</a></li>
-            <li><a href="https://discord.gg/x5jdFCrbGa" target="_blank" class="li">Soporte</a></li>
-            <li><a href="/premium.html" class="li">Premium</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="https://froxy.gitbook.io/froxy" target="_blank">Guía</a></li>
+            <li><a href="https://status.watchbot.app/bot/1003896461420937346" target="_blank">Estado</a></li>
+            <li><a href="https://discord.gg/x5jdFCrbGa" target="_blank">Soporte</a></li>
+            <li><a href="https://www.patreon.com/froxybot/membership" target="_blank">Premium</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
-    <main>
+    <div id="c-list">
         <h1>Comandos</h1>
 
         <div class="categorias">
             <input type="button" id="todos" checked onclick="javascript:activar_desactivar('todos')">
-        <label for="todos" class="buttons" id="btntodos">
-            <span class="button__text">Todos</span>
-            <i class="button__icon fas fa-globe"></i>
-        </label>
-        <input type="button" id="music" checked onclick="javascript:activar_desactivar('music')">
-        <label for="music" class="buttons" id="btnmusic">
-            <span class="button__text">Música</span>
-            <i class="button__icon fas fa-music"></i>
-        </label>
-        <input type="button" id="config" checked onclick="javascript:activar_desactivar('config')">
-        <label for="config" class="buttons" id="btnconfig">
-            <span class="button__text">Sistemas</span><i class="button__icon fas fa-gear"></i>
-        </label>
-        <input type="button" id="otros" checked onclick="javascript:activar_desactivar('otros')">
-        <label for="otros" class="buttons" id="btnotros">
-            <span class="button__text">Otros</span><i class="button__icon fas fa-ellipsis"></i>
-        </label>
-    </div>
-    
+            <label for="todos" class="buttons" id="btntodos">
+                <span class="button__text">Todos</span>
+                <i class="button__icon fas fa-globe"></i>
+            </label>
+            <input type="button" id="music" checked onclick="javascript:activar_desactivar('music')">
+            <label for="music" class="buttons" id="btnmusic">
+                <span class="button__text">Música</span>
+                <i class="button__icon fas fa-music"></i>
+            </label>
+            <input type="button" id="config" checked onclick="javascript:activar_desactivar('config')">
+            <label for="config" class="buttons" id="btnconfig">
+                <span class="button__text">Sistemas</span>
+                <i class="button__icon fas fa-cogs"></i>
+            </label>
+            <input type="button" id="otros" checked onclick="javascript:activar_desactivar('otros')">
+            <label for="otros" class="buttons" id="btnotros">
+                <span class="button__text">Otros</span>
+                <i class="button__icon fas fa-ellipsis-v"></i>
+            </label>
+        </div>
+
         <div id="div-todos" class="todos">
             <div class="comando">
                 <div class="comando-info">
                     <span>/filtro</span>
-                    <i class="fa-sharp fa-solid fa-crown"></i>
+                    <i class="fas fa-crown"></i>
                 </div>
                 <p>Activa o desactiva un filtro a la canción</p>
             </div>
             <div class="comando">
                 <div class="comando-info">
                     <span>/config</span>
-                    <i class="fa-sharp fa-solid fa-crown"></i>
+                    <i class="fas fa-crown"></i>
                 </div>
-                <p>Configura extras del bot como; <span>Moderadores, roles y canales extras.</span></p>
+                <p>Configura un sistema del bot como; <span>sistemas, moderadores y roles.</span></p>
             </div>
             <div class="comando">
                 <div class="comando-info">
                     <span>/adivina</span>
-                    <i class="fa-sharp fa-solid fa-crown"></i>
+                    <i class="fas fa-crown"></i>
                 </div>
                 <p>Crea un evento <span>Adivina el número</span></p>
             </div>
@@ -165,7 +169,7 @@
             <div class="comando">
                 <div class="comando-info">
                     <span>/filtro</span>
-                    <i class="fa-sharp fa-solid fa-crown"></i>
+                    <i class="fas fa-crown"></i>
                 </div>
                 <p>Activa o desactiva un filtro a la canción</p>
             </div>
@@ -217,7 +221,7 @@
             <div class="comando">
                 <div class="comando-info">
                     <span>/adivina</span>
-                    <i class="fa-sharp fa-solid fa-crown"></i>
+                    <i class="fas fa-crown"></i>
                 </div>
                 <p>Crea un evento <span>Adivina el número</span></p>
             </div>
@@ -225,7 +229,7 @@
                 <div class="comando-info">
                     <span>/config</span>
                 </div>
-                <p>Configura extras del bot como; <span>Moderadores, roles y canales extras.</span></p>
+                <p>Configura un sistema del bot como; <span>sistemas, moderadores y roles.</span></p>
             </div>
         </div>
 
@@ -245,9 +249,9 @@
             <div class="comando">
                 <div class="comando-info">
                     <span>/config</span>
-                    <i class="fa-sharp fa-solid fa-crown"></i>
+                    <i class="fas fa-crown"></i>
                 </div>
-                <p>Configura extras del bot como; <span>Moderadores, roles y canales extras.</span></p>
+                <p>Configura un sistema del bot como; <span>sistemas, moderadores y roles.</span></p>
             </div>
             <div class="comando">
                 <div class="comando-info">
@@ -275,26 +279,16 @@
             </div>
         </div>
 
-    </main>
+    </div>
 </body>
 <footer>
-    <div class="information-footer">
-        <div class="box-footer">
-            <h3>Interes</h3>
-            <div class="enlaces">
-                <a href="/">Inicio</a>
-                <a href="/comandos.html">comandos</a>
-                <a href="https://discord.gg/x5jdFCrbGa">Servidor de Soporte</a>
-            </div>
-        </div>
-        <div class="box-footer">
-            <h3>Políticas</h3>
-            <div class="enlaces">
-                <a href="/tos.html">Términos y Condiciones</a>
-                <a href="/privacy.html">Políticas de Privacidad</a>
-            </div>
-        </div>
-    </div>
+    <div id="f-owner"><span>Froxy</span>, un bot desarrollado por <span>hzdaniel</span> con <i class="fab fa-node-js"
+            style="color:#57f287"></i> y <i class="fas fa-heart" style="color: red"></i> para <i class="fab fa-discord"
+            style="color: #5865f2"></i>.</div>
+    <ul>
+        <li><a href="/tos.html">Términos y Condiciones</a></li>
+        <li><a href="/privacy.html">Políticas de Privacidad</a></li>
+    </ul>
 </footer>
 
 </html>
